@@ -4,6 +4,7 @@
     "oc2r:memory_small",
     "oc2r:memory_medium",
     "oc2r:memory_large",
-    "oc2r:memory_extra_large"
+    "oc2r:memory_extra_large",
+    "oc2r:memory_hc1"
   ]
 }

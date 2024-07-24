@@ -29,6 +29,7 @@ public final class ModItemModelProvider extends ItemModelProvider {
         simple(Items.MEMORY_MEDIUM);
         simple(Items.MEMORY_LARGE);
         simple(Items.MEMORY_EXTRA_LARGE);
+        simple(Items.MEMORY_HC1);
         simple(Items.CPU_TIER_1);
         simple(Items.CPU_TIER_2);
         simple(Items.CPU_TIER_3);
@@ -44,6 +45,12 @@ public final class ModItemModelProvider extends ItemModelProvider {
         simple(Items.HARD_DRIVE_LARGE, "item/hard_drive_base")
             .texture("layer1", "item/hard_drive_tint");
         simple(Items.HARD_DRIVE_EXTRA_LARGE, "item/hard_drive_base")
+            .texture("layer1", "item/hard_drive_tint");
+        simple(Items.HARD_DRIVE_HC1, "item/hard_drive_base")
+            .texture("layer1", "item/hard_drive_tint");
+        simple(Items.HARD_DRIVE_HC2, "item/hard_drive_base")
+            .texture("layer1", "item/hard_drive_tint");
+        simple(Items.HARD_DRIVE_HC3, "item/hard_drive_base")
             .texture("layer1", "item/hard_drive_tint");
         simple(Items.HARD_DRIVE_CUSTOM, "item/hard_drive_base")
             .texture("layer1", "item/hard_drive_tint");

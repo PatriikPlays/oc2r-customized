@@ -258,7 +258,7 @@ public final class FileImportExportCardItemDevice extends AbstractItemRPCDevice 
             return new byte[0];
         }
 
-        final byte[] buffer = new byte[512];
+        final byte[] buffer = new byte[1024];
         final int count = importedFile.data.read(buffer);
         if (count <= 0) {
             reset();

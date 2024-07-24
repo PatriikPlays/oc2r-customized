@@ -5,6 +5,9 @@
     "oc2r:hard_drive_medium",
     "oc2r:hard_drive_large",
     "oc2r:hard_drive_extra_large",
+    "oc2r:hard_drive_hc1",
+    "oc2r:hard_drive_hc2",
+    "oc2r:hard_drive_hc3",
     "oc2r:hard_drive_custom"
   ]
 }

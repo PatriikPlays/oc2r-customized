@@ -9,7 +9,7 @@ import net.minecraft.network.chat.TextColor;
 
 public final class TextFormatUtils {
     private static final int SIZE_STEP = 1024;
-    private static final String[] SIZE_FORMAT = {"%dB", "%dKB", "%dMB", "%dGB", "%dTB"};
+    private static final String[] SIZE_FORMAT = {"%dB", "%dKiB", "%dMiB", "%dGiB", "%dTiB"};
 
     public static String formatSize(long size) {
         int index = 0;

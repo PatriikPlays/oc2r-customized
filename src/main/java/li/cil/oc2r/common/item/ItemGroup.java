@@ -45,10 +45,14 @@ public final class ItemGroup {
             output.accept(Items.MEMORY_MEDIUM.get());
             output.accept(Items.MEMORY_LARGE.get());
             output.accept(Items.MEMORY_EXTRA_LARGE.get());
+            output.accept(Items.MEMORY_HC1.get());
             output.accept(Items.HARD_DRIVE_SMALL.get());
             output.accept(Items.HARD_DRIVE_MEDIUM.get());
             output.accept(Items.HARD_DRIVE_LARGE.get());
             output.accept(Items.HARD_DRIVE_EXTRA_LARGE.get());
+            output.accept(Items.HARD_DRIVE_HC1.get());
+            output.accept(Items.HARD_DRIVE_HC2.get());
+            output.accept(Items.HARD_DRIVE_HC3.get());
             output.accept(Items.HARD_DRIVE_CUSTOM.get());
             output.accept(Items.CPU_TIER_1.get());
             output.accept(Items.CPU_TIER_2.get());
