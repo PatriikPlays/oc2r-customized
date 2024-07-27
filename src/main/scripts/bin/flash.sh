@@ -24,7 +24,7 @@ case "$REPLY" in
     [yY][eE][sS]|[yY])
         printf "Erasing current firmware..."
         dd if=$2 of=$1 status=none # Work around for empty flash chips
-        dd ibs=$(echo "12*1024*1024" | bc) count=1 if=/dev/zero of=$1 status=none
+        dd ibs=$(echo "32*1024*1024" | bc) count=1 if=/dev/zero of=$1 status=none
         printf " Done\n"
         if [ "$3" = "yes" ]; then
             printf "Flashing OpenSBI..."

@@ -107,6 +107,8 @@ public final class BlobStorage {
      * @throws IOException if opening the blob fails.
      */
     public static synchronized FileChannel getOrOpen(final UUID handle) throws IOException {
+        System.out.println("Openning:");
+        System.out.println(handle.toString());
         FileChannel blob = BLOBS.get(handle);
         if (blob != null && blob.isOpen()) {
             return blob;

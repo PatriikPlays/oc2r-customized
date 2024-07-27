@@ -110,13 +110,13 @@ public final class ByteBufferFlashStorageDevice extends IdentityProxy<ItemStack>
     ///////////////////////////////////////////////////////////////
 
     private boolean allocateDevice(final VMContext context) {
-        if (!context.getMemoryAllocator().claimMemory(12*Constants.MEGABYTE)) {
+        if (!context.getMemoryAllocator().claimMemory(32*Constants.MEGABYTE)) {
             return false;
         }
 
         if (data == null) {
             try {
-                data = ByteBuffer.allocate(12*Constants.MEGABYTE);
+                data = ByteBuffer.allocate(32*Constants.MEGABYTE);
                 data.clear();
                 CompoundTag tag = ItemStackUtils.getModDataTag(identity).getCompound(DATA_TAG_NAME);
                 if (tag.hasUUID("blob")) {
